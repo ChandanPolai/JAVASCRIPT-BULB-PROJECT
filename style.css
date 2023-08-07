@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #03121f;
+}
+
+h1{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+span{
+    color: red;
+    text-transform: uppercase;
+}
+
+.bulb-container{
+    height: 300px;
+    width: 300px;
+    background: #f3f3f3;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.bulb-container .bulb-icon{
+    height: 70%;
+    width: 100%;
+    background:#333;
+    border-radius:10px 10px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb-icon i{
+    font-size:8rem;
+    color: #fff;
+}
+
+.bulb-container .bulb-buttons{
+    height: 30%;
+    width: 100%;
+    background: orange;
+    border-radius:0 0 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bulb-buttons button{
+    position: relative;
+    width: 200px;
+    text-transform: uppercase;
+    padding: 5px 20px;
+    cursor: pointer;
+    margin: 0 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.bulb-buttons .on-btn{
+    background-color: darkblue;
+    color: #fff;
+    animation: btn 2s infinite;
+
+}
+
+.bulb-buttons .on-btn:focus{
+    background-color: greenyellow;
+    color: darkblue; 
+}
+
+.bulb-buttons .off-btn{
+    background-color:#fff;
+    color: darkblue;
+    animation: btn 2s infinite ;
+}
+
+
+.bulb-buttons .off-btn:focus{
+    background-color:darkorchid;
+    color: #fff;
+}
+
+@keyframes btn{
+    0%{
+        outline: 2px solid red;
+        outline-offset: -3px;
+    }
+    30%{
+        outline: 2px solid pink;
+        outline-offset: -3px;
+    }
+    60%{
+        outline: 2px solid magenta;
+        outline-offset: -3px;
+    }
+    100%{
+        outline: 2px solid darkred;
+        outline-offset: -3px;
+    }
+    
+}
+
